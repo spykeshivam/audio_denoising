@@ -35,7 +35,7 @@ def upload_file():
     audio, sr = load_audio(input_path)
     denoised_audio = denoise_audio(model, audio, sr)
 
-    # Save the output
+    # Save the output in the folder
     output_path = os.path.join(app.config['OUTPUT_FOLDER'], f"denoised_{filename}")
     save_audio(denoised_audio, sr, output_path)
 
