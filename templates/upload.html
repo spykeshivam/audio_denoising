@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Denoising App</title>
+</head>
+<body>
+    <h1>Upload an Audio File for Denoising</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio_file" accept=".mp3,.wav" required>
+        <button type="submit">Upload and Denoise</button>
+    </form>
+</body>
+</html>
